@@ -50,6 +50,6 @@ model.add(Dense(10, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy', optimizer=SGD(lr=0.01), metrics=['accuracy'])
 # recommended epochs = 10
-model.fit(new_X_train, new_y_train, epochs=1, batch_size=32)
+model.fit(new_X_train, new_y_train, epochs=100, batch_size=32)
 
 model.save('trained_model.h5')
